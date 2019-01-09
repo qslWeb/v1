@@ -3,6 +3,7 @@ import Router from 'vue-router'
 
 Vue.use(Router)
 
+{{#demo}}
 export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
@@ -42,4 +43,16 @@ export default new Router({
     {name: 'tabcontainer', path: '/tabcontainer', component: (resolve) => require(['@/demo/tab-container.vue'], resolve)}
 
   ]
-})
+ })
+{{else}}
+export default new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  linkActiveClass: 'actives',
+  linkExactActiveClass: 'active',
+  routes: [
+  {name: 'home', path: '/', component: (resolve) => require(['@/views/index.vue'], resolve)}
+  ]
+ })
+
+{{/demo}}
