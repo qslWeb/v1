@@ -37,27 +37,27 @@ module.exports = {
       when: 'isNotTest',
       type: 'string',
       required: true,
-      message: 'Project name',
+      message: '项目名：',
     },
     description: {
       when: 'isNotTest',
       type: 'string',
       required: false,
-      message: 'Project description',
+      message: '项目描述',
       default: 'A Vue.js project',
     },
     author: {
       when: 'isNotTest',
       type: 'string',
-      message: 'Author',
+      message: '作者',
     },
     build: {
       when: 'isNotTest',
       type: 'list',
-      message: 'Vue build',
+      message: '编译模式',
       choices: [
         {
-          name: 'Runtime + Compiler: recommended for most users',
+          name: 'Runtime + Compiler: 推荐给大多数用户',
           value: 'standalone',
           short: 'standalone',
         },
@@ -72,12 +72,17 @@ module.exports = {
     router: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Install vue-router?',
+      message: '安装vue-router?',
+    },
+     demo: {
+      when: 'isNotTest',
+      type: 'confirm',
+      message: '是否使用mint-ui案例?',
     },
     lint: {
       when: 'isNotTest',
       type: 'confirm',
-      message: 'Use ESLint to lint your code?',
+      message: '使用ESLint检查你的代码?',
     },
     lintConfig: {
       when: 'isNotTest && lint',
@@ -137,7 +142,7 @@ module.exports = {
       when: 'isNotTest',
       type: 'list',
       message:
-        'Should we run `npm install` for you after the project has been created? (recommended)',
+        '项目创建后，我们是否应该为您运行“npm install”？ (推荐)',
       choices: [
         {
           name: 'Yes, use NPM',
@@ -170,6 +175,7 @@ module.exports = {
     'test/unit/setup.js': "unit && runner === 'jest'",
     'test/e2e/**/*': 'e2e',
     'src/router/**/*': 'router',
+    'src/demo/**/*': 'demo',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green

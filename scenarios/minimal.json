@@ -3,6 +3,7 @@
   "name": "test-minimal",
   "description": "Testing the minimal template setup",
   "author": "CircleCI",
+  "demo": false,
   "build": "standalone",
   "router": false,
   "lint": false,

@@ -3,6 +3,7 @@
   "name": "test",
   "description": "A Vue.js project",
   "author": "CircleCI",
+  "demo": false,
   "build": "standalone",
   "router": false,
   "lint": true,
