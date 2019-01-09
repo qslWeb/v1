@@ -8,7 +8,7 @@
         is-link>
         <div slot="title">
           <i :class="['indexicon', 'icon-' + item.icon]"></i>
-          <span>{{ item.name }}</span>
+          <span v-text="item.name"></span>
         </div>
       </mt-cell>
 
