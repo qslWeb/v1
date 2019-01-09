@@ -7,7 +7,7 @@
 export default {
     data(){
         return{
-            msg:"开始你的项目"
+            msg:"工商银行Vue前端项目"
         }
     }
 }
