@@ -5,7 +5,7 @@
   "author": "CircleCI",
   "demo": false,
   "build": "runtime",
-  "router": false,
+  "router": true,
   "lint": true,
   "lintConfig": "standard",
   "unit": true,

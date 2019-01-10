@@ -4,9 +4,8 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
-{{#router}}
 import router from './router'
-{{/router}}
+
 
 /* 引用饿了么前端ui框架 */
 import Mint from 'mint-ui'
@@ -27,9 +26,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}}
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}
