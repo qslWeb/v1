@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style >
+<style scope>
       .page-switch-padding {
         padding: 0 10px;
       }

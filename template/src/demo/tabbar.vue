@@ -72,7 +72,7 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
   .page-tabbar {
     overflow: hidden;
     height: 100vh;

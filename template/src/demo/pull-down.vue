@@ -27,7 +27,7 @@
   </div>
 </template>
 
-<style>
+<style scope>
 
    .page-loadmore {width: 100%;overflow-x: hidden;}
    .page-loadmore-desc {text-align: center;color: #666;padding-bottom: 5px; }

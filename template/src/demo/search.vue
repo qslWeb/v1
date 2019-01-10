@@ -68,6 +68,6 @@ export default {
 }
 </script>
 
-<style>
+<style scope>
   .page-search {height: 100%;}
 </style>

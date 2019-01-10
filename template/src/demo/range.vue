@@ -102,7 +102,7 @@ export default {
   }
 }
 </script>
-<style>
+<style scope>
 
       .mt-range {width: 100%;}
       .mint-cell-value {

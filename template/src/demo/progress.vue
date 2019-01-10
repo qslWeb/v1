@@ -48,7 +48,7 @@
 
 </template>
 
-<style>
+<style scope>
 
      /* 为了在列表元素中显示进度条的外部样式 */
      .mt-progress {width: 100%; position: absolute;top: 5px;}

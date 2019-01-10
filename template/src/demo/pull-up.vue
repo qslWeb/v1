@@ -21,7 +21,7 @@
   </div>
 </template>
 
-<style>
+<style scope>
 
      .page-loadmore-listitem {
         height: 50px;

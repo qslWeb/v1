@@ -44,7 +44,7 @@ export default {
 }
 </script>
 
-<style lang="css" scoped>
+<style scoped>
   .item {
     display: inline-block;
   }

@@ -18,7 +18,7 @@ iconClass	icon 图标的类名
   </div>
 </template>
 
-<style>
+<style scope>
  .page-toast-wrapper {
         padding: 0 20px;
         position: absolute 50% 0 0 0;
