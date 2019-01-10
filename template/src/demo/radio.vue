@@ -14,7 +14,7 @@
       v-model="value1"
       :options="options1" />
     <div>
-      <mt-cell title="选中的项">{{ value1 }}</mt-cell>
+      <mt-cell title="选中的项">\{{ value1 }}</mt-cell>
     </div>
 
     <mt-radio
@@ -23,7 +23,7 @@
       v-model="value2"
       :options="options2" />
     <div>
-      <mt-cell title="选中的项">{{ value2 }}</mt-cell>
+      <mt-cell title="选中的项">\{{ value2 }}</mt-cell>
     </div>
 
     <mt-radio

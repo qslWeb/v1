@@ -17,24 +17,24 @@ end	滑块右侧显示值
 
     <mt-cell v-for="(item, index1) in cells1" :title="item.title" :label="'value:' + item.value" :key="index1">
       <mt-range v-model="item.value">
-        <div slot="start" v-if="item.start">{{ item.start }}</div>
-        <div slot="end" v-if="item.end">{{ item.end }}</div>
+        <div slot="start" v-if="item.start">\{{ item.start }}</div>
+        <div slot="end" v-if="item.end">\{{ item.end }}</div>
       </mt-range>
     </mt-cell>
 
     <p class="page-range-header">自定义</p>
     <mt-cell v-for="(item,index2) in cells2" :title="item.title" :label="'value:' + item.value" :key="index2">
       <mt-range v-model="item.value" :min="item.min || 0" :max="item.max || 100" :step="item.step || 1" :bar-height="item.barHeight || 1" :disabled="item.disabled">
-        <div slot="start" v-if="item.start">{{ item.start }}</div>
-        <div slot="end" v-if="item.end">{{ item.end }}</div>
+        <div slot="start" v-if="item.start">\{{ item.start }}</div>
+        <div slot="end" v-if="item.end">\{{ item.end }}</div>
       </mt-range>
     </mt-cell>
 
     <p class="page-range-header">场景举例</p>
     <mt-cell v-for="(item,index3) in cells3" :title="item.title" :label="'value:' + item.value" :key="index3">
       <mt-range v-model="item.value" :min="item.min || 0" :max="item.max || 100" :step="item.step || 1">
-        <div slot="start" v-if="item.start" :style="{ 'font-size': item.start + 'px' }">{{ item.start }}</div>
-        <div slot="end" v-if="item.end" :style="{ 'font-size': item.end + 'px' }">{{ item.end }}</div>
+        <div slot="start" v-if="item.start" :style="{ 'font-size': item.start + 'px' }">\{{ item.start }}</div>
+        <div slot="end" v-if="item.end" :style="{ 'font-size': item.end + 'px' }">\{{ item.end }}</div>
       </mt-range>
     </mt-cell>
   </div>

@@ -38,7 +38,7 @@
 
       <mt-progress :value="value" v-if="progressVisible" transition="progress-fade">
 
-        <div slot="end">{{ value }}%</div>
+        <div slot="end">\{{ value }}%</div>
 
       </mt-progress>
 

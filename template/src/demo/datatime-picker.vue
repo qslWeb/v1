@@ -76,7 +76,7 @@
     </mt-datetime-picker>
 
    <div style="margin-top:30px">
-      {{visible5}}
+      \{{visible5}}
    </div>
 
 <!--

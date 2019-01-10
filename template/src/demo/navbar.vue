@@ -8,7 +8,7 @@
     </mt-navbar>
 
     <div>
-      <mt-cell class="page-part" title="当前选中">{{ selected }}</mt-cell>
+      <mt-cell class="page-part" title="当前选中">\{{ selected }}</mt-cell>
     </div>
 
     <mt-tab-container v-model="selected">

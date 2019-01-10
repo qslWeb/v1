@@ -13,7 +13,7 @@
 
       infinite-scroll-listen-for-event="uuu">
 
-        <li v-for="(item,index) in list"  :key="index">{{ item }}</li>
+        <li v-for="(item,index) in list"  :key="index">\{{ item }}</li>
 
       </ul>
 

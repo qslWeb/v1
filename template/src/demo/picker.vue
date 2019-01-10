@@ -4,23 +4,23 @@
     <div style="margin-top:30px">
       <mt-picker :slots="yearSlot" @change="onYearChange" :visible-item-count="3"></mt-picker>
     </div>
-    <p class="page-picker-desc">出生年份: {{ year }}</p>
+    <p class="page-picker-desc">出生年份: \{{ year }}</p>
 
     <div style="margin-top:30px">
       <mt-picker :slots="dateSlots" @change="onDateChange" :visible-item-count="3"></mt-picker>
     </div>
-    <p class="page-picker-desc">在校时间: {{ dateStart }} 至 {{ dateEnd }}</p>
+    <p class="page-picker-desc">在校时间: \{{ dateStart }} 至 \{{ dateEnd }}</p>
 
     <div style="margin-top:30px">
       <mt-picker :slots="addressSlots" @change="onAddressChange" :visible-item-count="5"></mt-picker>
     </div>
-    <p class="page-picker-desc">地址: {{ addressProvince }} {{ addressCity }}</p>
+    <p class="page-picker-desc">地址: \{{ addressProvince }} \{{ addressCity }}</p>
 
     <!-- defaultIndex 参数变化 -->
     <div style="margin-top:30px">
       <mt-picker :slots="numberSlot" @change="onNumberChange" :visible-item-count="3"></mt-picker>
     </div>
-    <p class="page-picker-desc">动态默认选项: {{ number }}</p>
+    <p class="page-picker-desc">动态默认选项: \{{ number }}</p>
 
 <!--
 在 change 事件中，可以使用注册到 picker 实例上的一些方法：
