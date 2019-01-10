@@ -17,7 +17,7 @@ export default new Router({
     {name: 'cellswipe', path: '/cellswipe', component: (resolve) => require(['@/demo/cell-swipe.vue'], resolve)},
     {name: 'cell', path: '/cell', component: (resolve) => require(['@/demo/cell.vue'], resolve)},
     {name: 'checklist', path: '/checklist', component: (resolve) => require(['@/demo/checklist.vue'], resolve)},
-    {name: 'datatimepicker', path: '/datatimepicker', component: (resolve) => require(['@/demo/datatime-picker.vue'], resolve)},
+    {name: 'datetimepicker', path: '/datetimepicker', component: (resolve) => require(['@/demo/datetime-picker.vue'], resolve)},
     {name: 'field', path: '/field', component: (resolve) => require(['@/demo/field.vue'], resolve)},
     {name: 'header', path: '/header', component: (resolve) => require(['@/demo/header.vue'], resolve)},
     {name: 'indexlist', path: '/indexlist', component: (resolve) => require(['@/demo/index-list.vue'], resolve)},

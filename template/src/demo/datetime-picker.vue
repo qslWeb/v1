@@ -75,9 +75,7 @@
       @confirm="handleChange">
     </mt-datetime-picker>
 
-   <div style="margin-top:30px">
-      \{{visible5}}
-   </div>
+   <div style="margin-top:30px">\{{visible5}}</div>
 
 <!--
 cancelText 取消按钮文本	String	'取消'
